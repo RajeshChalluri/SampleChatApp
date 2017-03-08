@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/video_photo_dialog_selector">
+
+    <ImageView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/dialog_cancel_icon" />
+
+    <TextView
+        android:id="@+id/userLoginHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="User SignUp"
+        android:textColor="@color/color_blue_qb"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/userName"
+        style="@style/EditTextStyle"
+        android:layout_below="@+id/dialog_cancel"
+        android:hint="please enter full name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        style="@style/EditTextStyle"
+        android:layout_below="@+id/userName"
+        android:hint="please enter email address *"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/userLogin"
+        style="@style/EditTextStyle"
+        android:layout_below="@+id/userEmail"
+        android:hint="please enter user login *"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        style="@style/EditTextStyle"
+        android:layout_below="@+id/userLogin"
+        android:hint="please enter password *"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/userConfirmPassword"
+        style="@style/EditTextStyle"
+        android:layout_below="@+id/userPassword"
+        android:hint="please confirm password *"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/userMobile"
+        style="@style/EditTextStyle"
+        android:layout_below="@+id/userConfirmPassword"
+        android:hint="please enter mobile"
+        android:inputType="textPassword"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/signUpSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userMobile"
+        android:layout_margin="10dp"
+        android:background="@color/color_blue_qb"
+        android:text="submit"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
